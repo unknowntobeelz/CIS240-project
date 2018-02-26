@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Index </title>
+    <meta charset="UTF-8">
+    <!--<meta http-equiv="X-Frame-Options" content="allow">-->
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!--<script src="http://code.jquery.com/jquery-2.1.0.js"></script>-->
+    <script src="index.js"></script>
+
+</head>
+<body>
+<br />
+<table width="100%" cellpadding="10">
+    <!--Title-->
+    <tr>
+        <td width="50%" align="right">
+            <h1 align="center">The Art Cart</h1>
+        </td>
+    </tr>
+</table>
+
+
+<br />
+<!--horizontal line -->
+<hr color="black" width="70%"/>
+
+
+<!-- buttons to switch betwwen the home page and the page that is subscribed to.-->
+<center>
+    <form>
+        <input type="button" align="bottom" value="Home" onclick="window.location.href='index.html'" />
+        <input type="button" value="Subscribed" onclick="window.location.href='subscribed.html'" />
+       <!-- this is to be implimented later with account systems
+        <input type="button" value="Account" onclick="window.location.href='account.html'" />-->
+    </form>
+</center>
+
+<!--<center>
+    <form>
+        <input type="button" align="bottom" value="artist"  />
+        <input type="button" value="style" />
+        <input type="button" value="popularity" />
+    </form>
+</center>-->
+
+<table align="center" id="myTable">
+    <thead>
+    <tr>
+        <td align="center">
+            <input onclick="sortTable(0)" id="sortingClick" type="button" align="bottom" value="artist"  />
+        </td>
+        <td align="center">
+            <input onclick="sortTable(1)" id="sortingClick" type="button" value="style" />
+        </td>
+
+        <!--bring this back in later with when sorting js works.-->
+        <!--<td align="center">
+            <input id="sortingClick" type="button" value="popularity" />
+        </td>-->
+    </tr>
+
+
+    <!-- one on the tries for javascript to work. -->
+
+    <!--<tr>
+        <th onclick="sortTable(0)" class="artist">Artist <a
+                href="javascript:sort(true, 'artist', 'content-table');"></a> <a
+                href="javascript:sort(false, 'artist', 'content-table');"></a>
+        </th>
+        <th onclick="sortTable(1)" class="style">Style <a
+                href="javascript:sort(true, 'style', 'content-table');"></a>
+            <a href="javascript:sort(false, 'style', 'content-table');"></a>
+        <th>
+    </tr>-->
+    </thead>
+
+
+
+
+
+    <tbody>
+
+    <tr>
+        <td><p> <a href="unknowntobeelz.html" class="artist">Unknowntobeelz</a></p>
+        </td>
+        <td><!-- SnapWidget -->
+            <iframe title="photography" class="artStyle" src="https://snapwidget.com/embed/512617" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:560px; height:420px"></iframe></iframe>
+        </td>
+
+    </tr>
+
+    <tr>
+        <td>
+            <p>
+                <a href="moonlight.html" class="artist">Moonlight Salvage</a>
+            </p>
+        </td>
+        <td>
+            <iframe title="car" class="artStyle" src="https://snapwidget.com/embed/512660" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:700px; height:250px"></iframe>        <td><!-- SnapWidget -->
+        </td>
+    </tr>
+    </tbody>
+
+
+</table>
+</body>
+</html>
